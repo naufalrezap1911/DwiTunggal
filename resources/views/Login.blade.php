@@ -40,7 +40,7 @@
         <form action="{{ route('AuthLogin') }}" method="POST" class="h-full">
             <div class="grid grid-cols-1 place-content-center h-full mx-24">
                 <div class="mb-8">
-                    <input type="text" placeholder="Username" name="email" class="w-full px-5 py-3 rounded-xl bg-[#6c82b2] text-[#1f3e7e] font-medium outline outline-2 outline-[#91a1c6] placeholder:text-[#91a1c6]">
+                    <input type="text" placeholder="Email" name="email" class="w-full px-5 py-3 rounded-xl bg-[#6c82b2] text-[#1f3e7e] font-medium outline outline-2 outline-[#91a1c6] placeholder:text-[#91a1c6]">
                 </div>
                 <div class="mb-16">
                     <input type="password" placeholder="Password" name="password" class="w-full px-5 py-3 rounded-xl bg-[#6c82b2] text-[#1f3e7e] font-medium outline outline-2 outline-[#91a1c6] placeholder:text-[#91a1c6]">

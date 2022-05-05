@@ -1,11 +1,11 @@
 @extends('Index')
 
 @section('Title')
-Data Bahan Baku
+Produk Terjual
 @endsection
 
 @section('Main')
-<form action="{{ route('AuthTambahBahanBaku') }}" method="POST">
+<form action="{{ route('AuthTambahProdukTerjual') }}" method="POST">
     <div class="static-list">
         <div class="grid grid-cols-5 gap-4 mb-5">
             <div class="px-5 py-3 font-medium text-[#b2bcd5]">Tanggal</div>
@@ -28,13 +28,13 @@ Data Bahan Baku
         <div class="grid grid-cols-5 gap-4 mb-5">
             <div class="px-5 py-3 font-medium text-[#b2bcd5]">Jumlah</div>
             <div class="col-span-3"><input type="number" name="jumlah" class="w-full px-5 py-3 rounded-xl bg-[#91a1c5] text-[#1f3e7e] font-medium outline outline-2 outline-[#a8b4d1]" required></div>
-            <div class="px-5 py-3 font-medium text-[#b2bcd5] text-right">Kg</div>
+            <div class="px-5 py-3 font-medium text-[#b2bcd5] text-right">Bks</div>
         </div>
         <div class="grid grid-cols-5 gap-4 mb-5">
             <div class="px-5 py-3 font-medium text-[#b2bcd5]">Harga</div>
             <div class="px-5 py-3 font-medium text-[#b2bcd5]">Rp.</div>
             <div class="col-span-2"><input type="number" name="harga" class="w-full px-5 py-3 rounded-xl bg-[#91a1c5] text-[#1f3e7e] font-medium outline outline-2 outline-[#a8b4d1]" required></div>
-            <div class="px-5 py-3 font-medium text-[#b2bcd5] text-right">/ Kg</div>
+            <div class="px-5 py-3 font-medium text-[#b2bcd5] text-right">/ Bks</div>
         </div>
     </div>
     <div class="absolute right-10 bottom-10">

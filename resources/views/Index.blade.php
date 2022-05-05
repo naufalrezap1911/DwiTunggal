@@ -118,7 +118,8 @@
             <a href="{{ route('DataPekerja') }}"><li class="btn-blue">Pekerja</li></a>
             @endif
             <a href="{{ route('DataBahanBaku') }}"><li class="btn-blue">Bahan Baku</li></a>
-            <a href="#"><li class="btn-blue">Produk</li></a>
+            <a href="{{ route('Produk') }}"><li class="btn-blue">Produk</li></a>
+            <a href="{{ route('Grafik') }}"><li class="btn-blue">Grafik</li></a>
         </ul>
         <ul class="absolute bottom-0 w-full">
             <a href="{{ route('Logout') }}"><li class="btn-red text-center">Logout</li></a>
