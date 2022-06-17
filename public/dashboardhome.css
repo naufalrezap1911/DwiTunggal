@@ -1,0 +1,43 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/30518462/173647117-10a27045-26fc-4cdb-968c-774f0d1f5a55.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jdul{
+  position: relative;
+}
+.jdul::before{
+  content: "";
+  position: absolute;
+}
+
+.deskri {
+  position: relative;
+}
+
+.deskri::before {
+  content: "";
+  position: absolute;
+}
+
+.nex {
+  position: relative;
+}
+
+.nex::before {
+  content: "";
+  position: absolute;
+}

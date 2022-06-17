@@ -4,10 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
-class pemilikSeeder extends Seeder
+class PemilikSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,12 +14,18 @@ class pemilikSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->insert([
+            'role_id' => 1,
+            'name' => 'Admin DwiTunggal',
+            'email' => 'admin@dwitunggal.com',
+            'password' => bcrypt('admin')
+        ]);
+
         DB::table('pemilik')->insert([
-            'nama' => 'admin',
-            'no_telp' => '089123456789',
-            'email' => 'admin@gmail.com',
-            'alamat' => 'Planet Bumi',
-            'password' => 'admin123',
+            'user_id' => 1,
+            'nama_pemilik' => 'Admin DwiTunggal',
+            'email' => 'admin@dwitunggal.com',
+            'password' => 'admin'
         ]);
     }
 }
